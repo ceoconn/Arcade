@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2");
+
+* {
+  font-family: "Baloo 2", cursive;
+  color: #2078df;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #1d1f20;
+}
+
+header{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.prompt{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+    display:grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 35rem;
+    height: 35rem;
+    grid-template-columns: auto minmax(12 ,1fr);
+    background-color: #0e73e7;
+}
+
+.cell{
+    border: .06rem solid rgb(17, 164, 255);
+}
+
+.cell.apple {
+    background-color: red;
+    border-radius: 15px 15px 40px 40px;
+}
+
+.cell.snake{
+    background-color: greenyellow;
+    border: greenyellow;
+    border-radius: 0.3rem;
+    
+}
+
+button{
+  border-radius: 0.3rem;
+}
+
+#score{
+display: block;
+ margin-top: 0.8rem;
+ margin-bottom: 0.5rem;
+}
+
+#controls {
+  display: none;
+  grid-template: repeat(3, 1fr)/repeat(3,1fr);
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+button.up {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+button.down {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+button.right {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+button.left {
+  grid-row: 2/3;
+  grid-column:1/2;
+}
+
+#final-score{
+  display: block;
+  color: white;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  border-bottom: 2px dashed greenyellow;
+}
+
+#alert{
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  
+}
+
+#reset{
+  display: none;
+  border: 2px solid greenyellow;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+#reset:hover{
+  background-color: greenyellow;
+}
+

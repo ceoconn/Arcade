@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    
+    background-image: linear-gradient(to bottom right, rgb(147, 145, 145), rgb(20, 20, 20), rgb(94, 92, 92));;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 15px rgb(1, 255, 1), -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+}
+
+#game-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.game-items {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 10px rgb(154, 4, 4); 
+    background-image: linear-gradient(to bottom, rgb(158, 6, 6), red, rgb(158, 6, 6));
+    border: 3px dashed rgb(159, 165, 159);
+    border-radius: 45px 45px 25px 25px; 
+}
+
+.game-items:hover{
+    box-shadow: 0px 0px 35px rgb(154, 4, 4); 
+}
+
+.game-name {
+    text-align: center;
+    margin-top: 40%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+}
+
+h3{
+    color: green;
+    font-size: 0.7rem;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+a:link{
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    header {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        text-shadow: 0px 0px 12px rgb(1, 255, 1), -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #game-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-items {
+        margin: 2rem;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0px 0px 10px rgb(154, 4, 4); 
+        background-color: rgb(205, 39, 39);
+        border: 3px dashed rgb(159, 165, 159);
+        border-radius: 45px 45px 25px 25px; 
+    }
+
+    a:link {
+        text-decoration: underline;
+        color: white
+    }
+}
